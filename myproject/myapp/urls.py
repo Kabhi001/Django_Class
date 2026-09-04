@@ -7,4 +7,5 @@ urlpatterns = [
     re_path(r'^restro/(?P<category>[\w-]+)/(?P<subcategory>[\w-]*)/?$',views.restro_detail),
     path('aboutus/', views.aboutus, name='aboutus'), 
     path('menu/', views.menu_view, name='menu'),
+    path('grade/', views.grade_calc, name='grade'),
 ]

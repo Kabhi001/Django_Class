@@ -138,3 +138,13 @@ def menu_view(request):
         "menu":menu
     }
     return render(request,"menu.html",context)
+
+
+def grade_calc(request):
+
+    context={
+        "name":"Abhishek",
+        "marks":40
+    }
+
+    return render(request,"grade.html",context)

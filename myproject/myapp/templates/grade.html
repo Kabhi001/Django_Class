@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade</title>
+</head>
+<body>
+    <h1>Grade Report</h1>
+    <p>Name: {{ name }}</p>
+    <p>Marks: {{ marks }}</p>
+
+    {% if marks >= 80 %}
+        <p>Grade: Excellent</p>
+    {% elif marks >= 60 %}
+        <p>Grade: Good</p>
+    {% elif marks >= 40 %}
+        <p>Grade: Average</p>
+    {% else %}
+        <p>Grade: Fail</p>
+    {% endif %}
+</body>
+</html>
