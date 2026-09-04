@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+</head>
+<body>
+    <h1>Today's menu</h1>
+    <ul>
+    {% for items in menu %}
+        <li>{{ items }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

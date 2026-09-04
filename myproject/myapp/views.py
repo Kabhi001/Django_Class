@@ -126,3 +126,15 @@ def aboutus(request):
         "Marks":50
     }
     return render(request,"aboutus.html",context)
+
+def menu_view(request):
+    menu=[
+        'Pizza',
+        'Burger',
+        'Noodles',
+        'Sandwich'
+    ]
+    context={
+        "menu":menu
+    }
+    return render(request,"menu.html",context)
