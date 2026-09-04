@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About Us</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}Restaurant Menu{% endblock %}
+
+{% block content %}
     <h1>Today's menu</h1>
     <ul>
-    {% for items in menu %}
-        <li>{{ items }}</li>
-    {% endfor %}
+        {% for items in menu %}
+            <li>{{ items }}</li>
+        {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
