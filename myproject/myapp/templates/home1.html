@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Home | My Django App{% endblock %}
+
+{% block content %}
+<main style="max-width: 900px; margin: 0 auto; padding: 48px 24px; text-align: center;">
+	<h1>Welcome to My Django App</h1>
+	<p>Explore our restaurant menu, learn more about us, and check your grade report.</p>
+
+	<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-top: 32px;">
+		<a href="/aboutus/" style="padding: 12px 20px; background-color: #2563eb; color: white; text-decoration: none; border-radius: 6px;">
+			About Us
+		</a>
+		<a href="/menu/" style="padding: 12px 20px; background-color: #16a34a; color: white; text-decoration: none; border-radius: 6px;">
+			View Menu
+		</a>
+		<a href="/grade/" style="padding: 12px 20px; background-color: #9333ea; color: white; text-decoration: none; border-radius: 6px;">
+			Grade Report
+		</a>
+	</div>
+</main>
+{% endblock %}
