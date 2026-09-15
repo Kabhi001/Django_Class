@@ -18,6 +18,19 @@ class HomeContentTest(TestCase):
         self.assertContains(response, "About Us")
 
 
+class GradeCalcTest(TestCase):
+    def test_grade_calc_page(self):
+        response = self.client.get('/grade/')
+
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'grade.html')
+        self.assertEqual(response.context['name'], 'Anurag')
+        self.assertEqual(response.context['marks'], 40)
+        self.assertContains(response, 'Grade: Average')
+
+
+
+
 
 
 
