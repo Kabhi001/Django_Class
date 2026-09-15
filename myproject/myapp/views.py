@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.template import context
 from django.shortcuts import render
 
+
 # def home(request):
 #     return HttpResponse("Hello, welcome to my Django app!")
 
@@ -143,8 +144,9 @@ def menu_view(request):
 def grade_calc(request):
 
     context={
-        "name":"Abhishek",
+        "name":"Anurag",
         "marks":40
     }
 
     return render(request,"grade.html",context)
+

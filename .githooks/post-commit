@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Publish every local commit to the configured upstream branch.
+git push origin HEAD
